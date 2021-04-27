@@ -6,8 +6,8 @@ const Robot = ({robot}) => {
     return (
         <div className="card" onClick = {()=>setDetails(!details)}> 
          {details ? 
-         <div>
-             <h3>{robot.name}</h3>
+         <div className="robot-details">
+             <h3> <span>Name: </span>{robot.name}</h3>
              <h3> {robot.username}</h3>
              <p>{robot.email}</p>
              <div>
