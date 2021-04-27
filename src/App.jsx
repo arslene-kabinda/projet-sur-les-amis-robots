@@ -7,7 +7,7 @@ const App = () => {
   const [robotFilter, setRobotFilter] = useState(robots);
   useEffect(() => {
     setSpinner(true)
-    fetch("http://jsonplaceholder.typicode.com/users/")
+    fetch("https://jsonplaceholder.typicode.com/users/")
       .then((r) => r.json())
       .then((data) => {
         setSpinner(false)
