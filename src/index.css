@@ -39,9 +39,15 @@ h1{
     text-align: center;
     font-size: 3em;
     font-family: 'Sega';
+    font-weight: normal;
     color: #0CCAC4;
     margin-top: 30px;
+    
 }
+
+    
+        
+
 h3{
     text-align: center;
    
@@ -74,6 +80,47 @@ input{
     
 }
 
-.robot-details h3 span{
-    font-size: 10px;
+.robot-details  span{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.robot-details p{
+    text-align: left;
+    padding : 3px ;
+    
+}
+.robot-details h4{
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+.robot-details h5{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 10px;
+
+}
+.span{
+    font-weight: bold;
+    margin-left: 10px;
+}
+@media screen and (max-width: 767px) {
+    h1{
+      text-align: center;
+      font-size: 1.6rem;
+      font-family: 'Sega';
+      font-weight: normal;
+      color: #0CCAC4;
+      margin-top: 30px;
+    }
+
+    .loading{
+        font-size: 1.6rem;
+        font-family: 'Sega';
+        color: #0CCAC4;
+        margin-top: 50px;
+         display: flex;
+        justify-content: center; 
+        
+    }
 }

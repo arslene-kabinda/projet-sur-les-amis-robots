@@ -7,27 +7,30 @@ const Robot = ({robot}) => {
         <div className="card" onClick = {()=>setDetails(!details)}> 
          {details ? 
          <div className="robot-details">
-             <h3> <span>Name: </span>{robot.name}</h3>
-             <h3> {robot.username}</h3>
-             <p>{robot.email}</p>
+             <h4> <span>Name: </span>{robot.name}</h4>
+             <p> <span className="span">Username: </span>{robot.username}</p>
+             <p><span className="span">Email: </span>{robot.email}</p>
              <div>
-                <p>{robot.address.street}</p>
-                <p>{robot.address.suite}</p>
-                <p>{robot.address.city}</p>
-                <p>{robot.address.zipcode}</p>
+                 <h5>Adress</h5>
+                <p><span>street: </span>{robot.address.street}</p>
+                <p><span>suite: </span>{robot.address.suite}</p>
+                <p><span>city: </span>{robot.address.city}</p>
+                <p><span>zipcode: </span>{robot.address.zipcode}</p>
                 <div>
-                    <p>{robot.address.geo.lat}</p>
-                    <p>{robot.address.geo.lng}</p>
+                    <h5>Geo</h5>
+                    <p><span>lat: </span>{robot.address.geo.lat}</p>
+                    <p><span>lng: </span>{robot.address.geo.lng}</p>
                 </div>
              
              </div>
              
-             <p>{robot.phone}</p>
-             <p>{robot.website}</p>
+             <p><span className="span">Phone: </span>{robot.phone}</p>
+             <p><span className="span">Website: </span>{robot.website}</p>
             <div>
-                 <p>{robot.company.name}</p>
-                 <p>{robot.company.catchPhrase}</p>
-                 <p>{robot.company.bs}</p>
+                <h5>Company</h5>
+                 <p><span>name: </span>{robot.company.name}</p>
+                 <p><span>catchPhrase: </span>{robot.company.catchPhrase}</p>
+                 <p><span>bs: </span>{robot.company.bs}</p>
             </div>
          </div>: <div> <img src={imageUrl} alt=""/> 
            <h3>{robot.name} </h3>
