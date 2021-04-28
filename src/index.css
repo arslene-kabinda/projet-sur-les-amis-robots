@@ -75,6 +75,7 @@ input{
     font-size: 3rem;
     font-family: 'Sega';
     color: #0CCAC4;
+    margin-top: 20px;
     /* display: flex;
     justify-content: center; */
     
@@ -86,7 +87,7 @@ input{
 }
 .robot-details p{
     text-align: left;
-    padding : 3px ;
+    padding : 1px ;
     
 }
 .robot-details h4{
@@ -122,5 +123,12 @@ input{
          display: flex;
         justify-content: center; 
         
+    }
+    input{
+        padding: 10px;
+        margin-top: 5%;
+        font-size: 1rem;
+        background-color: #CDECFF;
+        margin-bottom: 10px;
     }
 }
